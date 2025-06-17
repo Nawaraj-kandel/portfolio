@@ -22,11 +22,6 @@ const Navbar = () => {
             path: "/about"
         },
         {
-            id: 4,
-            name: "Portfolio",
-            path: "/portfolio"
-        },
-        {
             id: 5,
             name: "Contact",
             path: "/contact"
@@ -37,10 +32,10 @@ const Navbar = () => {
     }
     return (
         <>
-            <div className="max-w-full mx-auto p-4 md:px-12 shadow-md bg-white fixed top-0 left-0 right-0 ">
+            <div className="max-w-full mx-auto p-4 md:px-12 shadow-md bg-white fixed top-0 left-0 right-0 position z-50">
                 <div className="flex justify-between items-center h-16">
                     {/* Logo and Name Section */}
-                    <div className="flex items-center space-x-4">
+                    <div className="flex items-center space-x-8">
                         <Link to="/" className="flex items-center space-x-2">
                       
                         <img src={Me} className="w-12 h-12 rounded-full" alt="Nawaraj's photo" />

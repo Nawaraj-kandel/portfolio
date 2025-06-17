@@ -20,7 +20,7 @@ const Home = () => {
                         <h1>Hello, I am a</h1>
                         {/* <span className="text-black font-bold">a Software Engineer</span> */}
                         <ReactTyped className="text-black font-bold"
-                            strings={[" Software Engineer", " Front End Developer", " React Developer"]}
+                            strings={[" Software Engineer",  " Front End Developer", " React Developer", "Digital Marketer ", ""]}
                             typeSpeed={40}
                             backSpeed={50}
                             loop={true}
@@ -60,18 +60,18 @@ const Home = () => {
                     </div>
                     <br />
                     {/* social media links */}
-                    <div className="" >
+                    <div className=" " >
                         <h1 className=' md:text-3xl space-y-4 font-semibold '>Available on</h1>
                         <ul className=' px-4 flex space-x-10 text-2xl mt-2'>
-                            <li> <FaLinkedin className='text-2xl cursor-pointer hover:scale-110' /> </li>
-                            <li><FaGithub className='text-2xl cursor-pointer hover:scale-110' /></li>
-                            <li><FaInstagram className='text-2xl cursor-pointer hover:scale-110' /></li>
+                            <a href="https://www.linkedin.com/in/nawaraj-kandel-07a179246/">   <li> <FaLinkedin className='text-2xl cursor-pointer hover:scale-110' /> </li> </a>
+                            <a href="https://github.com/Nawaraj-kandel"> <li><FaGithub className='text-2xl cursor-pointer hover:scale-110' /></li> </a>
+                            <a href="https://www.instagram.com/nawaraj.kandel_">   <li><FaInstagram className='text-2xl cursor-pointer hover:scale-110' /></li> </a>
                         </ul>
                     </div>
                 </div>
 
                 {/* Right Section */}
-                <div className="md:w-1/2 -mt-12 order-1  md:order-2  ">
+                <div className="sm:rounded-lg md:w-1/2 -mt-12 order-1  md:order-2  ">
                     <img src={Hero1} className="   " alt="Nawaraj's photo" />
                 </div>
             </div>
