@@ -1,5 +1,5 @@
 import Hero1 from '../assets/Hero1.png';
-import MyFile from '../assets/numnarayan resume.pdf';
+import MyFile from '../assets/Numnarayan_Resume.pdf';
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
