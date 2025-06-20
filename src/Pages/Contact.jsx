@@ -9,7 +9,7 @@ const Contact = () => {
                 <h1 className="text-3xl font-bold mb-6 text-center">Contact Us</h1>
 
                 {/* Netlify Form Start */}
-                <form name="contact" method="POST" data-netlify="true">
+               <form name="contact" method="POST" data-netlify="true" action="/thank-you">
                     {/* Required for Netlify to detect the form */}
                     <input type="hidden" name="form-name" value="contact" />
 
