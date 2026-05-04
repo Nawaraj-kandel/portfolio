@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Me from "../assets/Me.png";
+import PropTypes from "prop-types";
 
 const Navbar = ({ theme, toggleTheme, scrollToHome, scrollToProjects, scrollToAbout, scrollToContact }) => {
     const [MenuOpen, setMenuOpen] = useState(false);
@@ -99,6 +100,14 @@ const Navbar = ({ theme, toggleTheme, scrollToHome, scrollToProjects, scrollToAb
             )}
         </div>
     );
+};
+Navbar.propTypes = {
+  theme: PropTypes.string.isRequired,
+  toggleTheme: PropTypes.func.isRequired,
+  scrollToHome: PropTypes.func.isRequired,
+  scrollToProjects: PropTypes.func.isRequired,
+  scrollToAbout: PropTypes.func.isRequired,
+  scrollToContact: PropTypes.func.isRequired,
 };
 
 export default Navbar;
