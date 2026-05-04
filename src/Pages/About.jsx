@@ -1,59 +1,76 @@
-import { FaUserGraduate, FaLaptopCode, FaHandshake } from 'react-icons/fa';
-import profileImage from '../assets/Me.png'; // Replace with your profile image path
+import { FaLaptopCode, FaChalkboardTeacher, FaUserTie } from 'react-icons/fa';
 
 const About = () => {
     return (
-        <div className="shadow-lg container mx-auto px-6 md:px-20 py-36 bg-gradient-to-r from-blue-50 to-blue-100 rounded-lg">
-            <div className="text-center">
-                <img
-                    src={profileImage}
-                    alt="Profile"
-                    className="w-32 h-32 mx-auto rounded-full shadow-md mb-6"
-                />
-                <h1 className="text-3xl font-bold mb-4">About Me</h1>
-                <p className="text-lg text-gray-700">
-                    Hello! I am <span className="font-bold">NUMNARAYAN KANDEL</span>, 
-                    also known as <span className="font-bold">NAWARAJ KANDEL</span>. 
-                    I am a student currently pursuing a Bachelor degree in Computer Science 
-                    and Information Technology. As a passionate Front-End Developer, I specialize 
-                    in building dynamic web applications using technologies like React, JavaScript, 
-                    HTML, and CSS.  My goal is to create user-friendly and responsive interfaces 
-                    that enhance the overall user experience.
+        <section className="py-20 px-6 md:px-20 bg-gradient-to-br from-white to-slate-100 dark:from-slate-950 dark:to-slate-900 transition-colors duration-300">
+
+            <div className="max-w-6xl mx-auto text-center">
+
+                {/* Title */}
+                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-6">
+                    About Me
+                </h2>
+
+                <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto mb-12">
+                    Front-End Developer and Lecturer focused on building modern web applications and teaching theoritical curriculum and practical skills.
                 </p>
-            </div>
 
-            <div className="mt-10 space-y-8">
-                <div className="flex flex-col items-center text-center">
-                    <FaUserGraduate className="text-blue-500 text-4xl mb-4" />
-                    <p className="text-lg text-gray-700">
-                        I am dedicated to delivering high-quality work and exceptional service. My expertise spans various fields, and I strive to exceed expectations with every project I undertake.
-                    </p>
-                </div>
+                {/* Cards */}
+                <div className="grid md:grid-cols-3 gap-8">
 
-                <div className="flex flex-col items-center text-center">
-                    <FaLaptopCode className="text-blue-500 text-4xl mb-4" />
-                    <p className="text-lg text-gray-700">
-                        My mission is to provide innovative solutions that help achieve goals. I believe in the power of collaboration and work closely with clients to understand their needs, delivering customized solutions that drive results.
-                    </p>
-                </div>
-
-                    <div className="flex flex-col items-center text-center">
-                        <FaHandshake className="text-blue-500 text-4xl mb-4" />
-                        <p className="text-lg text-gray-700">
-                           I have a experience in Social Media handling, where I have successfully managed various social media platforms, creating engaging content and building a strong online presence for brands. My skills in digital marketing and content creation allow me to effectively connect with audiences and drive engagement.
-                           Currenttly learning SEO  (Search Engine Optimization) to enhance website visibility and improve search engine rankings. I am committed to staying updated with the latest trends and techniques in the industry to provide the best possible service to my clients.
+                    {/* Card 1 */}
+                    <div className="group p-6 rounded-2xl bg-white dark:bg-slate-900 shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                        <FaLaptopCode className="text-sky-500 text-4xl mb-4 mx-auto group-hover:scale-110 transition" />
+                        <h3 className="font-semibold text-xl mb-3 text-slate-900 dark:text-white">
+                            Developer
+                        </h3>
+                        <p className="text-slate-600 dark:text-slate-300">
+                            I build responsive and user-friendly web applications using React, JavaScript, HTML, and CSS with a focus on performance and clean design.
                         </p>
                     </div>
-                
 
-                <div className="flex flex-col items-center text-center">
-                    <FaHandshake className="text-blue-500 text-4xl mb-4" />
-                    <p className="text-lg text-gray-700">
-                        Thank you for visiting my website. I look forward to collaborating with you and helping you achieve your objectives!
-                    </p>
+                    {/* Card 2 */}
+                    <div className="group p-6 rounded-2xl bg-white dark:bg-slate-900 shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                        <FaChalkboardTeacher className="text-sky-500 text-4xl mb-4 mx-auto group-hover:scale-110 transition" />
+                        <h3 className="font-semibold text-xl mb-3 text-slate-900 dark:text-white">
+                            Instructor
+                        </h3>
+                        <p className="text-slate-600 dark:text-slate-300">
+                            With 2+ years of experience, I teach web technology and guide students through the NEB curriculum using practical and project-based learning.
+                        </p>
+                    </div>
+
+                    {/* Card 3 */}
+                    <div className="group p-6 rounded-2xl bg-white dark:bg-slate-900 shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                        <FaUserTie className="text-sky-500 text-4xl mb-4 mx-auto group-hover:scale-110 transition" />
+                        <h3 className="font-semibold text-xl mb-3 text-slate-900 dark:text-white">
+                            Growth & Skills
+                        </h3>
+                        <p className="text-slate-600 dark:text-slate-300">
+                            I continuously improve my skills in modern web development and SEO, while also working with digital content and online platforms.
+                        </p>
+                    </div>
+
                 </div>
+
+                {/* Stats */}
+                <div className="mt-16 flex flex-wrap justify-center gap-8 text-slate-700 dark:text-slate-300">
+                    <div className="text-center">
+                        <h4 className="text-2xl font-bold text-sky-500">2+</h4>
+                        <p>Years Teaching</p>
+                    </div>
+                    <div className="text-center">
+                        <h4 className="text-2xl font-bold text-sky-500">NEB</h4>
+                        <p>Curriculum</p>
+                    </div>
+                    <div className="text-center">
+                        <h4 className="text-2xl font-bold text-sky-500">WEB</h4>
+                        <p>Focused</p>
+                    </div>
+                </div>
+
             </div>
-        </div>
+        </section>
     );
 };
 

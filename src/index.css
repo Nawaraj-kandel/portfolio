@@ -2,7 +2,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
-  
+  background-color: #f8fafc;
+  color: #0f172a;
+  transition: background-color 250ms ease, color 250ms ease;
+}
+
+.dark body {
+  background-color: #020617;
+  color: #e2e8f0;
 }
