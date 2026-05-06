@@ -16,6 +16,7 @@ const getInitialTheme = () => {
 
 const App = () => {
     const [theme, setTheme] = useState(getInitialTheme);
+    const [activeSection, setActiveSection] = useState('home');
     const homeRef = useRef(null);
     const projectsRef = useRef(null);
     const aboutRef = useRef(null);
@@ -34,7 +35,8 @@ const App = () => {
         setTheme((current) => (current === 'dark' ? 'light' : 'dark'));
     };
 
-    const scrollToSection = (ref) => {
+    const scrollToSection = (ref, section) => {
+        setActiveSection(section);
         ref.current?.scrollIntoView({ behavior: 'smooth' });
     };
 
@@ -43,10 +45,11 @@ const App = () => {
             <Navbar 
                 theme={theme} 
                 toggleTheme={toggleTheme}
-                scrollToHome={() => scrollToSection(homeRef)}
-                scrollToProjects={() => scrollToSection(projectsRef)}
-                scrollToAbout={() => scrollToSection(aboutRef)}
-                scrollToContact={() => scrollToSection(contactRef)}
+                activeSection={activeSection}
+                scrollToHome={() => scrollToSection(homeRef, 'home')}
+                scrollToProjects={() => scrollToSection(projectsRef, 'projects')}
+                scrollToAbout={() => scrollToSection(aboutRef, 'about')}
+                scrollToContact={() => scrollToSection(contactRef, 'contact')}
             />
             <div ref={homeRef}>
                 <Home scrollToContact={() => scrollToSection(contactRef)} />

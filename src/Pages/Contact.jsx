@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
-import { CiMail } from "react-icons/ci";
+
 
 const Contact = () => {
     const form = useRef();
