@@ -31,7 +31,7 @@ const Navbar = ({ theme, toggleTheme, scrollToHome, scrollToProjects, scrollToAb
     };
     return (
         <div className="max-w-full mx-auto p-4 md:px-12 shadow-md bg-white dark:bg-slate-900 fixed top-0 left-0 right-0 z-50 transition-colors duration-300">
-            <div className="flex justify-between items-center h-16">
+            <div className="flex justify-between items-center h-8">
                 {/* Logo and Name Section */}
                 <div className="flex items-center space-x-4">
                     <button onClick={scrollToHome} className="flex items-center space-x-2 cursor-pointer hover:opacity-80 transition-opacity">
