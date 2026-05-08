@@ -13,7 +13,7 @@ import {
     FaBullhorn,
 } from "react-icons/fa";
 
-import { SiTailwindcss, SiC, SiGoogleanalytics, SiBootstrap } from "react-icons/si";
+import { SiTailwindcss, SiC, SiGoogleanalytics, SiBootstrap, SiPython } from "react-icons/si";
 
 
 
@@ -115,6 +115,7 @@ const Home = ({ scrollToContact }) => {
                         { icon: <SiBootstrap className='text-6xl text-purple-600 mb-4' />, label: 'Bootstrap' },
                         { icon: <SiGoogleanalytics className='text-6xl text-green-600 mb-4' />, label: 'SEO' },
                         { icon: <FaBullhorn className='text-6xl text-red-600 mb-4' />, label: 'Digital Marketing' },
+                        { icon: <SiPython className='text-6xl text-purple-600 mb-4' />, label: 'Python' },
                     ].map(({ icon, label }) => (
                         <div key={label} className='flex flex-col items-center justify-center bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-3xl shadow-lg p-6 hover:shadow-xl transition duration-300 transform hover:-translate-y-1'>
                             {icon}
