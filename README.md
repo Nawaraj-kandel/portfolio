@@ -1,4 +1,4 @@
-Can view at : https://nawarajkandel.netlify.app/
+you can visit my portfolio : https://www.numnarayankandel.com.np/
 
 # React + Vite
 
