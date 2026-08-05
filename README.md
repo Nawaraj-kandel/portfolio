@@ -1,4 +1,4 @@
-you can visit my portfolio : https://www.numnarayankandel.com.np/
+You can visit my portfolio : https://www.numnarayankandel.com.np/
 
 # React + Vite
 
